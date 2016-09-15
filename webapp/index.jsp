@@ -2,7 +2,7 @@
 <html>
 <head><title>Login</title></head>
 <body>
-<form name="loginForm" method="GET" action="login">
+<form name="loginForm" method="POST" action="login">
     Login/Email:<br/>
     <input type="text" name="login" value=""/>
     <br/>Password:<br/>

@@ -1,16 +1,12 @@
 import DTO.News;
 import DTO.User;
 
-import javax.jws.soap.SOAPBinding;
 import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import java.io.IOException;
 import java.util.*;
-
 
 public class LoginServlet extends HttpServlet {
 
@@ -36,7 +32,7 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
         UserDAO userDAO = new UserDAO();
         if (userDAO.checkUser(login, password)) {
-            User user  = userDAO.findUserByLogin(login);
+            User user = userDAO.findUserByLogin(login);
             request.setAttribute("name", user.getName());
             request.setAttribute("surname", user.getSurname());
             NewsDAO newsDAO = new NewsDAO();
@@ -46,6 +42,5 @@ public class LoginServlet extends HttpServlet {
         } else {
             request.getRequestDispatcher("error.jsp").forward(request, response);
         }
-
     }
 }

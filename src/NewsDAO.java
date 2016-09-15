@@ -6,7 +6,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NewsDAO extends AbstractDAO<Integer, News>{
+public class NewsDAO extends AbstractDAO<Integer, News> {
 
     public static final String SQL_SELECT_ALL_NEWS = "SELECT * FROM news";
 

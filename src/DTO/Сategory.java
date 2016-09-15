@@ -1,6 +1,6 @@
 package DTO;
 
-public class Сategory extends Entity{
+public class Сategory extends Entity {
     private String categoryType;
 
     public String getCategoryType() {

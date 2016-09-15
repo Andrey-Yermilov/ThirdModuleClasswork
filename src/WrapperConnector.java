@@ -1,11 +1,7 @@
-/**
- * Created by a.yermilau on 9/14/2016.
- */
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
-
 
 public class WrapperConnector {
     private Connection connection;
@@ -28,7 +24,7 @@ public class WrapperConnector {
         throw new SQLException("connection or statement is null");
     }
 
-    public PreparedStatement prepareStatement (String sql) throws SQLException{
+    public PreparedStatement prepareStatement(String sql) throws SQLException {
         if (connection != null) {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             if (preparedStatement != null) {

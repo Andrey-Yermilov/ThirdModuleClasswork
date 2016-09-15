@@ -38,10 +38,8 @@ public class User extends Entity {
         this.password = password;
     }
 
-
-
     @Override
     public String toString() {
-        return String.format("%d - %s - %s - %s - %s",getId(), getName(), getSurname(), getEmail(), getPassword());
+        return String.format("%d - %s - %s - %s - %s", getId(), getName(), getSurname(), getEmail(), getPassword());
     }
 }

@@ -1,4 +1,3 @@
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -10,7 +9,7 @@ public class ConnectorDB {
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException cnfe) {
-            System.out.println("Error loading driver: " +cnfe);
+            System.out.println("Error loading driver: " + cnfe);
         }
         ResourceBundle resource = ResourceBundle.getBundle("database");
         String url = resource.getString("db.url");

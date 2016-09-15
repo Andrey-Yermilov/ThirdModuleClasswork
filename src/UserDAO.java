@@ -49,7 +49,6 @@ public class UserDAO extends AbstractDAO<Integer, User> {
             this.closeStatement(st);
 
         }
-        System.out.println(user);
         return user;
     }
 
@@ -62,5 +61,4 @@ public class UserDAO extends AbstractDAO<Integer, User> {
             else return false;
         } else return false;
     }
-
 }

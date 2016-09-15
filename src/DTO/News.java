@@ -1,7 +1,6 @@
 package DTO;
 
-
-public class News extends Entity{
+public class News extends Entity {
     private String title;
     private String author;
     private String date;
